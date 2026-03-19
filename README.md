@@ -2,8 +2,8 @@
 
 **Ashen Throne** is a high-performance, 3D Soulslike Action RPG built for the web. Experience a challenging journey through a decaying world, face powerful Titans, and rekindle the First Flame.
 
-![Ashen Throne Gameplay](public/images/Game.png)
 ![Ashen Throne Main Menu](public/images/Main%20Menu.png)
+![Ashen Throne Gameplay](public/images/Game.png)
 *(Screenshots of the dark and atmospheric world of Ashen Throne)*
 
 ## 🌌 The World
