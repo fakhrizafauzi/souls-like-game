@@ -30,14 +30,30 @@ export function Minimap() {
 
   // Points of interest (POIs) - using simple markers
   const pois = [
-    { id: 'bonfire', x: 0, z: -8, color: '#ffaa00', label: 'B', size: 8 },
-    { id: 'npc_town', x: -12, z: -28, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_grave', x: 15, z: -160, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_forest', x: -10, z: -320, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_desert', x: 20, z: -500, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_beach', x: -15, z: -710, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_ice', x: 12, z: -850, color: '#88ccff', label: 'N', size: 6 },
-    { id: 'npc_ruin', x: -10, z: -1010, color: '#88ccff', label: 'N', size: 6 },
+    // Town
+    { id: 'bonfire_town', x: 0, z: -8, color: '#ffaa00', label: 'B', size: 9 },
+    { id: 'npc_raffus', x: -12, z: -28, color: '#88ccff', label: 'N', size: 7 },
+    { id: 'npc_aldric', x: 12, z: -12, color: '#8a3a3a', label: 'N', size: 7 },
+    { id: 'npc_seryn', x: -6, z: -40, color: '#4a6a8a', label: 'N', size: 7 },
+
+    // Biome Checkpoints (Bonfires)
+    { id: 'bf_grave', x: 8, z: -112, color: '#ffaa00', label: 'B', size: 7 },
+    { id: 'bf_forest', x: -15, z: -260, color: '#ffaa00', label: 'B', size: 7 },
+    { id: 'bf_desert', x: 18, z: -460, color: '#ffaa00', label: 'B', size: 7 },
+    { id: 'bf_beach', x: -8, z: -660, color: '#ffaa00', label: 'B', size: 7 },
+    { id: 'bf_ice', x: 20, z: -810, color: '#ffaa00', label: 'B', size: 7 },
+    { id: 'bf_ruin', x: 0, z: -960, color: '#ffaa00', label: 'B', size: 7 },
+
+    // Region NPCs
+    { id: 'npc_yorn', x: 15, z: -160, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_hunter', x: -10, z: -320, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_nomad', x: 20, z: -500, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_sailor', x: -15, z: -710, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_wizard', x: 12, z: -850, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_scholar', x: -10, z: -1010, color: '#88ccff', label: 'N', size: 6 },
+    { id: 'npc_sentinel', x: -22, z: -1160, color: '#aa2222', label: '!', size: 6 },
+
+    // Bosses
     { id: 'boss_ruin', x: 0, z: -1130, color: '#ff2222', label: '✖', size: 10 },
     { id: 'boss_titan', x: 0, z: -1251, color: '#aa0000', label: '💀', size: 12 },
   ]

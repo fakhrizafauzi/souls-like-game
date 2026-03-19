@@ -217,7 +217,7 @@ export function MainMenu({ onPlay }) {
           color: '#333', fontSize: 10, letterSpacing: '0.3em',
           opacity: bgLoaded ? 1 : 0, transition: 'opacity 3s ease-in 1.5s'
         }}>
-          v1.0 React Three Fiber · Ashen Throne
+          v1.0 Ashen Throne by Ryza and Antigravity
         </div>
       </div>
 
