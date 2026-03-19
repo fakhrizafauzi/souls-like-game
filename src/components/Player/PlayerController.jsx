@@ -124,6 +124,16 @@ export function PlayerController({ position = [0, 5, 0], rbRef: externalRef }) {
       return
     }
 
+    // --- Out of Bounds Safety Check ---
+    const pos = rbRef.current.translation()
+    // Teleport to nearest bonfire if falling through world or way out of side bounds
+    if (pos.y < -10 || Math.abs(pos.x) > 90 || pos.z > 60) {
+      const respawnPos = useGameStore.getState().lastBonfirePos
+      rbRef.current.setTranslation({ x: respawnPos[0], y: respawnPos[1] + 2, z: respawnPos[2] }, true)
+      rbRef.current.setLinvel({ x: 0, y: 0, z: 0 }, true)
+      return
+    }
+
     const rbv = rbRef.current.linvel()
     targetVel.current.set(0, rbv.y, 0)
 
